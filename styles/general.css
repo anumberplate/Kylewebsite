@@ -1,0 +1,15 @@
+body{
+  font-family: Roboto, Unna, Arial;
+  margin-bottom: 1000px;
+  margin-top:90px;
+ 
+}
+
+.web-content{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right:0;
+  left:0;
+
+}
