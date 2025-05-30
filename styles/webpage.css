@@ -419,20 +419,27 @@
   margin-bottom: 20px;
   border-radius:5px;
   border:none;
+  transition: color 0.15s, background-color 0.15s;
+  cursor: pointer;
+}
+.purchase-button:hover{
+  color:white;
+  background-color: #151515;
 
 }
-.purchase-button :hover{
+.purchase-button2{
   flex: 1;
   margin-bottom: 20px;
   border-radius:5px;
   border:none;
-
-}
-.pro-box > .purchase-button{
   color:white;
   background-color: #151515;
+  transition: color 0.15s, background-color 0.15s;
 }
-
+.purchase-button2 :hover{
+  color:#151515;
+  background-color:white;
+}
 
 
 
