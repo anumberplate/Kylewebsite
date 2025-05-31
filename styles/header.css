@@ -10,13 +10,13 @@
   left:0;
   align-items: center;
   justify-content: space-between;
-  
+  width:auto;
 
 }
 
 .company-logo{
   padding-left:30px;
-  width:400px;
+  max-width:400px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -44,7 +44,6 @@
   font-size:16px;
   border:none;
   background-color: black;
-  white-space: nowrap;
   cursor: pointer;
   transition: text-decoration 0.15s;
 }
@@ -61,16 +60,7 @@
  
 }
 
-.drop-down{
-  margin-left:-3px;
-  width:5px;
-  background-color: black;
-  border:none;
-  padding-right:1px;
-  padding-left: 1px;
-  color:rgb(33, 158, 188);
 
-}
 .features-button{
   font-family:Roboto, Arial ;
   color:white;

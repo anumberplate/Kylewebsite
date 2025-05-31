@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang = "en">
   <head>
+    <script src = "/scripts/main.js"></script>
     <title>StudyGenie</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,7 +46,7 @@
             Enhance your learning using StudyGenie
           </p>
           <p class = "hero-paragraph-two">
-            This platform is your all-in-one learning comapanion,
+            This platform is your all-in-one learning companion,
             designed to make education smarter, and more personal.
           </p>
           <button class = "get-started-button">
@@ -106,48 +107,45 @@
         <div class = "testimonials-title">
           Testimonials
         </div>
-        <marquee>
-          <div class = "testimonial-container">
-            <div class = "test">
-              <p class = "testimonial-paragraph">
-                "I took the python beginner courseand it was so well-structured. I could learn at my
-                and now I've built my first web app!"
-              </p>
-              <p class = "name">
-                James K
-              </p>
-              <p class = "school">
-                University Student
-              </p>
-            </div>
-            <div class = "test">
-              <p class = "testimonial-paragraph">
-                “The tutoring service helped me raise my math grade from
-                 a C to an A in just two months.”
-              </p>
-              <p class = "name">
-                Lydia T.
-              </p>
-              <p class = "school">
-                University Student
-              </p>
-            </div>
-            <div class = "test">
-              <p class = "testimonial-paragraph">
-                “The AI chatbot is a lifesaver during late-night study sessions. It explains concepts in a way
-                 I can actually understand.”
-              </p>
-              <p class = "name">
-                Jane Doe
-              </p>
-              <p class = "school">
-                High school student
-              </p>
-            </div>
+        <div class = "testimonial-container">
+          <div class = "test">
+            <p class = "testimonial-paragraph">
+              "I took the python beginner course and it was so well-structured. I could learn at my
+              and now I've built my first web app!"
+            </p>
+            <p class = "name">
+              James K
+            </p>
+            <p class = "school">
+              University Student
+            </p>
           </div>
-        </marquee>
+          <div class = "test">
+            <p class = "testimonial-paragraph">
+              “The tutoring service helped me raise my math grade from
+                a C to an A in just two months.”
+            </p>
+            <p class = "name">
+              Lydia T.
+            </p>
+            <p class = "school">
+              University Student
+            </p>
+          </div>
+          <div class = "test">
+            <p class = "testimonial-paragraph">
+              “The AI chatbot is a lifesaver during late-night study sessions. It explains concepts in a way
+                I can actually understand.”
+            </p>
+            <p class = "name">
+              Jane Doe
+            </p>
+            <p class = "school">
+              High school student
+            </p>
+          </div>
         </div>
-      </section>
+    </section>
       <section class = "FAQ-section">
         <div class = "start-faq">
           <p class = "FAQs-title">
@@ -162,7 +160,7 @@
             <p class = "faq-question">
               What is the Note Parser and how does it work?
             </p>
-            <p class = "answer-one">
+            <p class = "answer">
               The Note Parser automatically scans your text notes and highlights key points, definitions,
                dates, and important concepts. It uses AI to make your study material cleaner and easier to
                revise
@@ -174,7 +172,7 @@
             <p class = "faq-question">
               Can I generate quizzes from any topic?
             </p>
-            <p class = "answer-two">
+            <p class = "answer">
               Yes! Just paste in your notes or enter a topic, and the Quiz Generator will create a set of 
               questions-multiple choic, true/false, or short answer - instantly.
             </p>
@@ -185,7 +183,7 @@
             <p class = "faq-question">
               Are the quizzes accurate and reliable?
             </p>
-            <p class = "answer-three">
+            <p class = "answer">
               Yes, quizzes are powered by AI and based on the content you provide. You can also review and 
               edit questions to match your learning style.
             </p>
@@ -343,34 +341,35 @@
       </footer>
     </main>
     <script>
-    const form = document.getElementById('signupForm');
-    const emailInput = document.getElementById('email');
-    const message = document.getElementById('message');
+      const form = document.getElementById('signupForm');
+      const emailInput = document.getElementById('email');
+      const message = document.getElementById('message');
 
-    form.addEventListener('submit', function(event) {
-      event.preventDefault(); 
+      form.addEventListener('submit', function(event) {
+        event.preventDefault(); 
 
-      const email = emailInput.value.trim();
+        const email = emailInput.value.trim();
 
-      
-      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-      if (email === '') {
-        message.style.padding = '10px';
-        message.style.backgroundColor = 'rgba(0,0,0,0.5)';
-        message.textContent = 'Please enter your email.';
-      } else if (!emailPattern.test(email)) {
-        message.style.padding = '10px';
-        message.style.backgroundColor = 'rgba(0,0,0,0.5)';
-        message.textContent = 'Please enter a valid email address.';
-      } else {
-        message.style.padding = '10px';
-        message.style.color = 'rgb(0,209,0)';
-        message.style.backgroundColor = 'rgba(0,0,0,0.5)';
-        message.textContent = 'Thanks for subscribing!';
-       
-      }
-    });
+        if (email === '') {
+          message.style.padding = '10px';
+          message.style.backgroundColor = 'rgba(0,0,0,0.5)';
+          message.textContent = 'Please enter your email.';
+        } else if (!emailPattern.test(email)) {
+          message.style.padding = '10px';
+          message.style.backgroundColor = 'rgba(0,0,0,0.5)';
+          message.textContent = 'Please enter a valid email address.';
+        } else {
+          message.style.padding = '10px';
+          message.style.color = 'rgb(0,209,0)';
+          message.style.backgroundColor = 'rgba(0,0,0,0.5)';
+          message.textContent = 'Thanks for subscribing!';
+        
+        }
+      });
   </script>
+  
   </body>
 </html>
